@@ -1,0 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+header {
+  width: 100%;
+  height: 30%;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+
+#main-logo {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transform: translateY(-50%);
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.22em;
+}
+
+#main-logo:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 15px;
+  right: 15px;
+  bottom: 50px;
+  border: 5px solid #ffea00cc;
+}
+
+#main-logo:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 40px;
+  border: 5px solid #ffea0067;
+  transform: rotateZ(-2.5deg)
+}
+
+.logo {
+  width: 15em;
+  height: 12em;
+  background: black;
+  border: 40px solid black;
+}
+
+  .logo div {
+    width: 100%;
+    height: 100%;
+    background: url(my-white.png) 50% 50% no-repeat;
+    background-size: contain;
+  }
+
+main {
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: -9em;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: sans-serif;
+}
+
+  main p {
+    line-height: 130%;
+  }
+
+  main h1 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: normal;
+    padding-top: 0.5em;
+  }
