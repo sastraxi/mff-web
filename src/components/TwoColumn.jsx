@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1040px;
   display: flex;
   align-items: flex-start;
   margin-bottom: 2em;
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 
   & > :first-child {
     max-width: ${props => props.split};
+    min-width: ${props => props.minSplit || 'auto'};
   }
 
   & > :last-child {
@@ -22,9 +23,10 @@ const Wrapper = styled.div`
 `;
 
 const TwoColumn = ({
-  split, columnMargin, a, b,
+  a, b,
+  ...wrapperProps
 }) => (
-  <Wrapper split={split} columnMargin={columnMargin}>
+  <Wrapper {...wrapperProps}>
     { a }
     { b }
   </Wrapper>
@@ -32,6 +34,7 @@ const TwoColumn = ({
 
 TwoColumn.propTypes = {
   split: PropTypes.string.isRequired,
+  minSplit: PropTypes.string,
   columnMargin: PropTypes.string,
   a: PropTypes.node.isRequired,
   b: PropTypes.node.isRequired,
@@ -39,6 +42,7 @@ TwoColumn.propTypes = {
 
 TwoColumn.defaultProps = {
   columnMargin: '3em',
+  minSplit: undefined,
 };
 
 export default TwoColumn;

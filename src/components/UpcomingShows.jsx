@@ -14,7 +14,11 @@ const UpcomingShows = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Header>Upcoming Shows</Header>
     <Paragraph>
-      Hello world!
+      Aliquam fringilla neque mauris.
+      <br />
+      Proin ac ipsum pharetra, porta diam ac, mattis libero.
+      <br />
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
     </Paragraph>
   </Wrapper>
 );

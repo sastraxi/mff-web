@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import Root from '../components/Root';
 
 import Splash from '../components/Splash';
-import AlbumBanner from '../components/AlbumBanner';
+import Banner from '../components/Banner';
 import AlbumBlurb from '../components/AlbumBlurb';
 import UpcomingShows from '../components/UpcomingShows';
-import OurStory from '../components/OurStory';
+import Welcome from '../components/Welcome';
 import Instagrid from '../components/Instagrid';
 import TwoColumn from '../components/TwoColumn';
 
@@ -17,7 +17,7 @@ const SpacedOut = styled.div`
   width: ${props => props.width || 'auto'};
   padding-top: ${props => props.paddingTop};
   & > * + * {
-    padding-top: 1em;
+    padding-top: ${props => props.spacing || '1em'};
   }
 `;
 
@@ -29,17 +29,17 @@ const LeftColumn = () => (
 );
 
 const RightColumn = () => (
-  <SpacedOut paddingTop="3em">
+  <SpacedOut paddingTop="3em" spacing="2em">
+    <Welcome />
     <UpcomingShows />
     <Instagrid />
-    <OurStory />
   </SpacedOut>
 );
 
 const IndexPage = () => (
   <Root>
     <Splash />
-    <AlbumBanner />
+    <Banner />
     <TwoColumn split="20%" a={<LeftColumn />} b={<RightColumn />} />
   </Root>
 );

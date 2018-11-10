@@ -5,6 +5,10 @@ import { Helmet } from 'react-helmet';
 import Header from '../elements/Header';
 
 const InstagridWrapper = styled.div`
+  & > iframe {
+    max-width: 600px;
+    margin: -2px;
+  }
 `;
 
 export default () => (
