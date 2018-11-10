@@ -1,0 +1,22 @@
+<svg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'>
+  <g transform="rotate(3 0 0) translate(7 0)">
+    <path
+      d="M65,35
+        L245,40
+        L260,200
+        L10,170z"
+      stroke='#00000033'
+      stroke-width="5"
+      fill="transparent"
+    />
+  </g>
+  <path
+    d="M65,35
+       L245,40
+       L260,200
+       L10,170z"
+    stroke='#fff000c3'
+    stroke-width="5"
+    fill="transparent"
+  />
+</svg>
