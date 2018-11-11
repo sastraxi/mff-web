@@ -26,6 +26,9 @@ const Wrapper = styled.div`
     & > :first-child {
       max-width: unset;
       min-width: unset;
+      margin-top: 0;
+    }
+    & > div:last-child {
     }
   }
 `;

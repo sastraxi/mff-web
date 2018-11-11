@@ -12,15 +12,17 @@ const Wrapper = styled.div`
   
   background: black;
   color: #bbb;
-  padding: 0.5em 1em;
+  padding: 0.6em 1em;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   
   @media (max-width: 480px) {
     flex-direction: column;
     padding: 2em 1em;
+    align-items: center;
+    height: 18vh;
   }
 `;
 
@@ -30,8 +32,12 @@ const YellowIcon = styled.span`
   display: inline-block;
 `;
 
-const Announcement = styled.span`
-  padding: 0.5em;
+const Album = styled.div`
+  margin-top: 3px;
+  @media (max-width: 480px) {
+    margin-top: unset;
+  }
+
   em {
     font-family: ${HEADER_FONT_FAMILY};
     text-transform: lowercase;
@@ -44,23 +50,33 @@ const Announcement = styled.span`
   }
 `;
 
+const Announcement = styled.div`
+  margin-top: 3px;
+  @media (max-width: 480px) {
+    margin-top: unset;
+  }
+`;
+
 const Services = styled.div`
   padding-right: 0.5em;
   & > * {
     margin-left: 0.5em;
     img {
-      width: 32px;
+      width: 24px;
       height: 100%;
+      padding: 0 0.25em;
     }
   }
 `;
 
 const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
-    <Announcement>
+    <Album>
       <YellowIcon>&#9654;</YellowIcon>
       <em>ALWAYS CHANGING</em>
-      &nbsp;&ndash; our debut ep available now
+    </Album>
+    <Announcement>
+      our debut ep available now
     </Announcement>
     <Services>
       <a href="https://itunes.com"><MusicService name="itunes" /></a>
