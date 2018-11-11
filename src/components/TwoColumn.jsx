@@ -20,6 +20,14 @@ const Wrapper = styled.div`
 
   & > :last-child {
   }
+
+  @media (max-width: ${props => props.mobileWidth}) {
+    flex-direction: column-reverse;
+    & > :first-child {
+      max-width: unset;
+      min-width: unset;
+    }
+  }
 `;
 
 const TwoColumn = ({
@@ -38,11 +46,13 @@ TwoColumn.propTypes = {
   columnMargin: PropTypes.string,
   a: PropTypes.node.isRequired,
   b: PropTypes.node.isRequired,
+  mobileWidth: PropTypes.string,
 };
 
 TwoColumn.defaultProps = {
   columnMargin: '3em',
   minSplit: undefined,
+  mobileWidth: '480px',
 };
 
 export default TwoColumn;

@@ -15,9 +15,7 @@ const InstagridWrapper = styled.div`
 export default () => (
   <InstagridWrapper>
     <Helmet>
-      <script
-        src="//cdn.lightwidget.com/widgets/lightwidget.js"
-      />
+      <script src="//cdn.lightwidget.com/widgets/lightwidget.js" />
     </Helmet>
     <Header>Follow us on Instagram</Header>
     <Paragraph>
@@ -28,7 +26,7 @@ export default () => (
       title="Instagram feed"
       src="http://lightwidget.com/widgets/a5cfff5bef345e838d8ee09ca1a18018.html"
       scrolling="no"
-      allowtransparency="true"
+      allowtransparency="true" /* eslint-disable-line */
       className="lightwidget-widget"
       style={{ width: '100%', border: 0, overflow: 'hidden' }}
     />

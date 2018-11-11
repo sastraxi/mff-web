@@ -19,6 +19,10 @@ const SpacedOut = styled.div`
   & > * + * {
     padding-top: ${props => props.spacing || '1em'};
   }
+
+  @media (max-width: 480px) {
+    padding-top: unset;
+  }
 `;
 
 const LeftColumn = () => (
