@@ -16,7 +16,6 @@ const Header = styled.h1`
     font-size: 30px;
     line-height: 22px;
   }
-
 `;
 
 export default Header;
