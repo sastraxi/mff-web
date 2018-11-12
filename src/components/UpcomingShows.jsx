@@ -16,7 +16,7 @@ const UpcomingShows = ({ isMobile }) => (
     <Paragraph>
       ALWAYS CHANGING EP Release Party
       <br />
-      Saturday, December 8th @ The Garrison
+      Saturday, December 8th @ The Hideout
       <br />
       Doors 7pm; for more details see the&nbsp;
       <a href="https://facebook.com">event page on facebook</a>

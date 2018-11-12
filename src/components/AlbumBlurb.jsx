@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import AlbumCover from './image/AlbumCover';
 import DetectMobile from './util/DetectMobile';
 
+import MusicServices from './MusicServices';
+
 import Header from '../elements/Header';
 import Paragraph from '../elements/Paragraph';
 
@@ -26,14 +28,6 @@ const Title = styled(Header)`
   text-align: center;
 `;
 
-const WhereToListen = styled.ul`
-  margin: 1em;
-  padding-left: 0;
-
-  & > li {
-  }
-`;
-
 const AlbumBlurb = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <AlbumCover />
@@ -48,13 +42,12 @@ const AlbumBlurb = ({ isMobile }) => (
       the bonds of brotherhood, family, and
       those you love.
     </Description>
-    <WhereToListen>
-      <li><a href="#">Bandcamp</a></li>
-      <li>Spotify</li>
-      <li>YouTube</li>
-      <li>Apple Music</li>
-      <li>iTunes</li>
-    </WhereToListen>
+    <MusicServices
+      type="text"
+      spotify="https://spotify"
+      apple="https://apple"
+      itunes="https://itunes"
+    />
   </Wrapper>
 );
 

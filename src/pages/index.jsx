@@ -5,11 +5,14 @@ import Root from '../components/Root';
 
 import Splash from '../components/Splash';
 import Banner from '../components/Banner';
+import SingleBlurb from '../components/SingleBlurb';
 import AlbumBlurb from '../components/AlbumBlurb';
 import UpcomingShows from '../components/UpcomingShows';
 import Welcome from '../components/Welcome';
 import Instagrid from '../components/Instagrid';
 import TwoColumn from '../components/TwoColumn';
+
+import Divider from '../elements/Divider';
 
 /* TODO: mobile version */
 
@@ -27,6 +30,8 @@ const SpacedOut = styled.div`
 
 const LeftColumn = () => (
   <SpacedOut paddingTop="1em">
+    <SingleBlurb />
+    <Divider />
     <AlbumBlurb />
     {/* TODO: contact information */}
   </SpacedOut>
@@ -37,6 +42,7 @@ const RightColumn = () => (
     <Welcome />
     <UpcomingShows />
     <Instagrid />
+    <Divider />
   </SpacedOut>
 );
 
@@ -44,7 +50,7 @@ const IndexPage = () => (
   <Root>
     <Splash />
     <Banner />
-    <TwoColumn split="20%" a={<LeftColumn />} b={<RightColumn />} />
+    <TwoColumn split="20%" minSplit="220px" a={<LeftColumn />} b={<RightColumn />} />
   </Root>
 );
 

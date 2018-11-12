@@ -7,12 +7,12 @@ import services from '../images/services';
 const ServiceIcon = styled.img`
 `;
 
-const MusicService = ({ name }) => (
-  <ServiceIcon src={services[name]} alt="" />
+const MusicServiceIcon = ({ name }) => (
+  <ServiceIcon src={services[name]} alt={`${name} icon`} />
 );
 
-MusicService.propTypes = {
+MusicServiceIcon.propTypes = {
   name: PropTypes.oneOf(['apple-music', 'spotify', 'itunes']).isRequired,
 };
 
-export default MusicService;
+export default MusicServiceIcon;

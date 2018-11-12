@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import DetectMobile from './util/DetectMobile';
-import MusicService from './MusicService';
+import MusicServices from './MusicServices';
+
 import { HEADER_FONT_FAMILY, TITLE_SKEW } from '../elements/global';
 
 const Wrapper = styled.div`
@@ -57,18 +58,6 @@ const Announcement = styled.div`
   }
 `;
 
-const Services = styled.div`
-  padding-right: 0.5em;
-  & > * {
-    margin-left: 0.5em;
-    img {
-      width: 24px;
-      height: 100%;
-      padding: 0 0.25em;
-    }
-  }
-`;
-
 const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Album>
@@ -78,11 +67,12 @@ const AlbumBanner = ({ isMobile }) => (
     <Announcement>
       our debut ep available now
     </Announcement>
-    <Services>
-      <a href="https://itunes.com"><MusicService name="itunes" /></a>
-      <a href="https://itunes.com"><MusicService name="spotify" /></a>
-      <a href="https://itunes.com"><MusicService name="apple-music" /></a>
-    </Services>
+    <MusicServices
+      type="icons"
+      spotify="https://spotify"
+      apple="https://apple"
+      itunes="https://itunes"
+    />
   </Wrapper>
 );
 
