@@ -14,11 +14,13 @@ const UpcomingShows = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Header>Upcoming Shows</Header>
     <Paragraph>
-      Aliquam fringilla neque mauris.
+      ALWAYS CHANGING EP Release Party
       <br />
-      Proin ac ipsum pharetra, porta diam ac, mattis libero.
+      Saturday, December 8th @ The Garrison
       <br />
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      Doors 7pm; for more details see the&nbsp;
+      <a href="https://facebook.com">event page on facebook</a>
+      .
     </Paragraph>
   </Wrapper>
 );
