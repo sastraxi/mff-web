@@ -7,8 +7,11 @@ import Paragraph from '../elements/Paragraph';
 
 const InstagridWrapper = styled.div`
   & > iframe {
+    width: 100%;
     max-width: 600px;
     margin: -2px;
+    overflow: hidden;
+    border: 0;
   }
 `;
 
@@ -24,11 +27,9 @@ export default () => (
     </Paragraph>
     <iframe
       title="Instagram feed"
-      src="http://lightwidget.com/widgets/a5cfff5bef345e838d8ee09ca1a18018.html"
+      src="http://lightwidget.com/widgets/dcc1c0de75a35888a11e9c7949772fba.html"
       scrolling="no"
       allowtransparency="true" /* eslint-disable-line */
-      className="lightwidget-widget"
-      style={{ width: '100%', border: 0, overflow: 'hidden' }}
     />
   </InstagridWrapper>
 );
