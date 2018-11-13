@@ -3,12 +3,20 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import DetectMobile from './util/DetectMobile';
+import AlbumCover from './image/AlbumCover';
 
 import Header from '../elements/Header';
 import Paragraph from '../elements/Paragraph';
 import MusicServices from './MusicServices';
 
 const Wrapper = styled.div`
+`;
+
+const Lyrics = styled.div`
+  font-style: italic;
+  margin: 1em;
+  text-align: center;
+  opacity: 0.5;
 `;
 
 const Description = styled(Paragraph)`
@@ -21,9 +29,19 @@ const Title = styled(Header)`
 
 const SingleBlurb = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
+    <AlbumCover />
+    <Lyrics>
+      There’s nothing quite as healing
+      <br />
+      as friends you love
+      <br />
+      or a call from your mom
+    </Lyrics>
     <Title>End of your Gun</Title>
     <Description>
-      Lorem ipsum dolor sit amet.
+      We’re super excited to share the
+      lead single from our upcoming EP
+      with you!
     </Description>
     <MusicServices
       type="text"

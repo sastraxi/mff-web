@@ -55,6 +55,8 @@ const Announcement = styled.div`
   margin-top: 3px;
   @media (max-width: 480px) {
     margin-top: unset;
+    padding: 0 1em;
+    text-align: center;
   }
 `;
 
@@ -62,10 +64,10 @@ const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Album>
       <YellowIcon>&#9654;</YellowIcon>
-      <em>ALWAYS CHANGING</em>
+      <em>End of your Gun</em>
     </Album>
     <Announcement>
-      our debut ep available now
+      listen to our EP’s lead single now
     </Announcement>
     <MusicServices
       type="icons"

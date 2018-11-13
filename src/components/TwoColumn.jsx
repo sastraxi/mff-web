@@ -23,6 +23,10 @@ const Wrapper = styled.div`
 
   @media (max-width: ${props => props.mobileWidth}) {
     flex-direction: column-reverse;
+    & > div {
+      margin-left: ${props => props.mobileMargin};
+      margin-right: ${props => props.mobileMargin};
+    }
     & > :first-child {
       max-width: unset;
       min-width: unset;
@@ -47,6 +51,7 @@ TwoColumn.propTypes = {
   split: PropTypes.string.isRequired,
   minSplit: PropTypes.string,
   columnMargin: PropTypes.string,
+  mobileMargin: PropTypes.string,
   a: PropTypes.node.isRequired,
   b: PropTypes.node.isRequired,
   mobileWidth: PropTypes.string,
@@ -54,6 +59,7 @@ TwoColumn.propTypes = {
 
 TwoColumn.defaultProps = {
   columnMargin: '3em',
+  mobileMargin: '2em',
   minSplit: undefined,
   mobileWidth: '480px',
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 import Root from '../components/Root';
 
@@ -31,8 +32,6 @@ const SpacedOut = styled.div`
 const LeftColumn = () => (
   <SpacedOut paddingTop="1em">
     <SingleBlurb />
-    <Divider />
-    <AlbumBlurb />
     {/* TODO: contact information */}
   </SpacedOut>
 );
@@ -48,6 +47,9 @@ const RightColumn = () => (
 
 const IndexPage = () => (
   <Root>
+    <Helmet>
+      <title>my favourite filter</title>
+    </Helmet>
     <Splash />
     <Banner />
     <TwoColumn split="20%" minSplit="220px" a={<LeftColumn />} b={<RightColumn />} />
