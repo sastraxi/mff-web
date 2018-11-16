@@ -39,7 +39,6 @@ const ContactForm = () => (
     <Input type="email" name="email" placeholder="Your email" />
     <TextArea id="contact-message" name="message" placeholder="What's on your mind?" />
     <Submit type="submit">Send</Submit>
-
   </form>
 );
 

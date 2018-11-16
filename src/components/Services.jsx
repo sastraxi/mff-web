@@ -10,6 +10,7 @@ const SERVICE_ACTIONS = {
   tidal: 'Get it on Tidal',
   itunes: 'Get it on iTunes',
   youtube: 'View on YouTube',
+  bandcamp: 'Stream on Bandcamp',
 };
 
 const Icons = styled.div`

@@ -64,7 +64,7 @@ const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Album>
       <YellowIcon>&#9654;</YellowIcon>
-      <em>End Of Your Gun</em>
+      <em>Am I To Blame?</em>
     </Album>
     <Announcement>
       listen to the lead single now
@@ -74,6 +74,7 @@ const AlbumBanner = ({ isMobile }) => (
       spotify="https://spotify"
       apple="https://apple"
       itunes="https://itunes"
+      bandcamp="https://myfavouritefilter.bandcamp.com/albums/always-changing"
     />
   </Wrapper>
 );

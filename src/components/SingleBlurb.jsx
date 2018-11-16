@@ -38,13 +38,13 @@ const SingleBlurb = ({ isMobile }) => (
       url="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
     <Lyrics>
-      “There’s nothing as revealing
+      “You thought that I could be
       <br />
-      as cold hard truths
+      the perfect man
       <br />
-      from the ones you love”
+      inside your dreams”
     </Lyrics>
-    <Title>End Of Your Gun</Title>
+    <Title>Am I To Blame?</Title>
     <Description>
       we’re super excited to show you
       the first single off of our debut ep!
@@ -56,6 +56,7 @@ const SingleBlurb = ({ isMobile }) => (
       youtube="https://youtube.com/watch?v="
       apple="https://apple.com/music"
       itunes="https://itunes"
+      bandcamp="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
   </Wrapper>
 );
