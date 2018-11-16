@@ -38,11 +38,9 @@ const SingleBlurb = ({ isMobile }) => (
       url="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
     <Lyrics>
-      “You thought that I could be
+      “I just can’t explain these thoughts,
       <br />
-      the perfect man
-      <br />
-      inside your dreams”
+      they’re mine to own”
     </Lyrics>
     <Title>Am I To Blame?</Title>
     <Description>

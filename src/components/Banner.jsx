@@ -67,7 +67,8 @@ const AlbumBanner = ({ isMobile }) => (
       <em>Am I To Blame?</em>
     </Album>
     <Announcement>
-      listen to the lead single now
+      listen to the lead single&nbsp;
+      <a href="#bandcamp">now</a>
     </Announcement>
     <Services
       type="icons"

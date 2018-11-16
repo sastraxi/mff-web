@@ -70,13 +70,16 @@ const Bandcamp = ({ width, ...props }) => {
 
   // 2. auto-sizing embed widget
   return (
-    <ReactResizeDetector handleWidth>
-      {(sizeProps) => {
-        console.log(sizeProps);
-        if (!sizeProps) return <div />;
-        return <Widget {...props} width={sizeProps} />;
-      }}
-    </ReactResizeDetector>
+    <>
+      <a id="bandcamp" /> {/* eslint-disable-line */}
+      <ReactResizeDetector handleWidth>
+        {(sizeProps) => {
+          console.log(sizeProps);
+          if (!sizeProps) return <div />;
+          return <Widget {...props} width={sizeProps} />;
+        }}
+      </ReactResizeDetector>
+    </>
   );
 };
 

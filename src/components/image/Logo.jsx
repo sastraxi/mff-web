@@ -20,7 +20,7 @@ export default () => (
         placeholderImage: file(relativePath: { eq: "my-white.png" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
