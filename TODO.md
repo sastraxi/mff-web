@@ -1,4 +1,4 @@
 # Remaining tasks
 
-- real text
+- better favicon
 - test on all shit browsers
