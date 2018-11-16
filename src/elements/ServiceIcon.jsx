@@ -4,15 +4,15 @@ import styled from 'styled-components';
 
 import services from '../images/services';
 
-const ServiceIcon = styled.img`
+const Icon = styled.img`
 `;
 
-const MusicServiceIcon = ({ name }) => (
-  <ServiceIcon src={services[name]} alt={`${name} icon`} />
+const ServiceIcon = ({ name }) => (
+  <Icon src={services[name]} alt={`${name} icon`} />
 );
 
-MusicServiceIcon.propTypes = {
+ServiceIcon.propTypes = {
   name: PropTypes.oneOf(['apple-music', 'spotify', 'itunes']).isRequired,
 };
 
-export default MusicServiceIcon;
+export default ServiceIcon;

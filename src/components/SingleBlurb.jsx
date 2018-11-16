@@ -7,14 +7,14 @@ import AlbumCover from './image/AlbumCover';
 
 import Header from '../elements/Header';
 import Paragraph from '../elements/Paragraph';
-import MusicServices from './MusicServices';
+import Services from './Services';
 
 const Wrapper = styled.div`
 `;
 
 const Lyrics = styled.div`
   font-style: italic;
-  margin: 1em;
+  margin: 1em 0;
   text-align: center;
   opacity: 0.5;
 `;
@@ -31,20 +31,20 @@ const SingleBlurb = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <AlbumCover />
     <Lyrics>
-      There’s nothing quite as healing
+      “There’s nothing as revealing
       <br />
-      as friends you love
+      as cold hard truths
       <br />
-      or a call from your mom
+      from the ones you love”
     </Lyrics>
     <Title>End of your Gun</Title>
     <Description>
-      We’re super excited to share the
-      lead single from our upcoming EP
-      with you!
+      we’re super excited to show you
+      the first single off of our debut ep!
+      share your thoughts below &mdash; mff
     </Description>
-    <MusicServices
-      type="text"
+    <Services
+      type="list"
       spotify="https://open.spotify.com/listen/bx9vn2"
       youtube="https://youtube.com/watch?v="
       apple="https://apple.com/music"

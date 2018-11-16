@@ -7,7 +7,6 @@ import Root from '../components/Root';
 import Splash from '../components/Splash';
 import Banner from '../components/Banner';
 import SingleBlurb from '../components/SingleBlurb';
-import AlbumBlurb from '../components/AlbumBlurb';
 import UpcomingShows from '../components/UpcomingShows';
 import Welcome from '../components/Welcome';
 import Instagrid from '../components/Instagrid';
@@ -52,7 +51,7 @@ const IndexPage = () => (
     </Helmet>
     <Splash />
     <Banner />
-    <TwoColumn split="20%" minSplit="220px" a={<LeftColumn />} b={<RightColumn />} />
+    <TwoColumn split="25%" minSplit="150px" a={<LeftColumn />} b={<RightColumn />} />
   </Root>
 );
 

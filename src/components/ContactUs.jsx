@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import AlbumCover from './image/AlbumCover';
 import DetectMobile from './util/DetectMobile';
 
 import Services from './Services';
@@ -28,31 +27,30 @@ const Title = styled(Header)`
   text-align: center;
 `;
 
-const AlbumBlurb = ({ isMobile }) => (
+const ContactUs = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
-    <AlbumCover />
     <Lyrics>
       &mdash; nothing’s the same for anyone
       anymore... we’re
     </Lyrics>
-    <Title>Always Changing</Title>
+    <Title>Contact us</Title>
     <Description>
-      The debut ep by My Favourite Filter
-      is available now. Five songs to celebrate
-      the bonds of brotherhood, family, and
-      those you love.
+      We love hearing from our fans, friends, and family.
     </Description>
     <Services
       type="list"
-      spotify="https://spotify"
-      apple="https://apple"
-      itunes="https://itunes"
+      withIcons
+      instagram="https://insta"
+      facebook="https://def"
+      spotify="https://spotify/mff-artist"
+      bandcamp="https://abc"
+      itunes="https://apple/mff-artist"
     />
   </Wrapper>
 );
 
-AlbumBlurb.propTypes = {
+ContactUs.propTypes = {
   isMobile: PropTypes.bool.isRequired,
 };
 
-export default DetectMobile(AlbumBlurb);
+export default DetectMobile(ContactUs);

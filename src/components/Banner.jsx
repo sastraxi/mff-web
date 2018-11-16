@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import DetectMobile from './util/DetectMobile';
-import MusicServices from './MusicServices';
+import Services from './Services';
 
 import { HEADER_FONT_FAMILY, TITLE_SKEW } from '../elements/global';
 
@@ -67,9 +67,9 @@ const AlbumBanner = ({ isMobile }) => (
       <em>End of your Gun</em>
     </Album>
     <Announcement>
-      listen to our EP’s lead single now
+      listen to the lead single now
     </Announcement>
-    <MusicServices
+    <Services
       type="icons"
       spotify="https://spotify"
       apple="https://apple"

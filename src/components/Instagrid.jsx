@@ -27,7 +27,7 @@ export default () => (
     </Paragraph>
     <iframe
       title="Instagram feed"
-      src="http://lightwidget.com/widgets/dcc1c0de75a35888a11e9c7949772fba.html"
+      src="//lightwidget.com/widgets/dcc1c0de75a35888a11e9c7949772fba.html"
       scrolling="no"
       allowtransparency="true" /* eslint-disable-line */
     />

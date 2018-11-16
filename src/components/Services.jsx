@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import MusicServiceIcon from '../elements/MusicServiceIcon';
+import ServiceIcon from '../elements/ServiceIcon';
 
 const SERVICE_ACTIONS = {
   spotify: 'Stream on Spotify',
@@ -32,9 +32,9 @@ const List = styled.ul`
   }
 `;
 
-const MusicServices = ({ type, ...services }) => {
+const Services = ({ type, ...services }) => {
   switch (type) {
-    case 'text':
+    case 'list':
       return (
         <List>
           {
@@ -55,7 +55,7 @@ const MusicServices = ({ type, ...services }) => {
           {
             Object.keys(services).map(name => (
               <a key={name} href={services[name]}>
-                <MusicServiceIcon name={name} />
+                <ServiceIcon name={name} />
               </a>
             ))
           }
@@ -68,8 +68,8 @@ const MusicServices = ({ type, ...services }) => {
   }
 };
 
-MusicServices.propTypes = {
-  type: PropTypes.oneOf(['text', 'icons']).isRequired,
+Services.propTypes = {
+  type: PropTypes.oneOf(['list', 'icons']).isRequired,
   apple: PropTypes.string,
   tidal: PropTypes.string,
   spotify: PropTypes.string,
@@ -77,4 +77,4 @@ MusicServices.propTypes = {
   youtube: PropTypes.string,
 };
 
-export default MusicServices;
+export default Services;

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { MAX_CONTENT_WIDTH } from '../elements/global';
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: ${MAX_CONTENT_WIDTH};
   display: flex;
   align-items: flex-start;
   margin-bottom: 2em;
@@ -14,6 +15,7 @@ const Wrapper = styled.div`
   }
 
   & > :first-child {
+    width: 10000px; /* something absurdly large */
     max-width: ${props => props.split};
     min-width: ${props => props.minSplit || 'auto'};
   }
@@ -28,6 +30,7 @@ const Wrapper = styled.div`
       margin-right: ${props => props.mobileMargin};
     }
     & > :first-child {
+      width: unset;
       max-width: unset;
       min-width: unset;
       margin-top: 0;
