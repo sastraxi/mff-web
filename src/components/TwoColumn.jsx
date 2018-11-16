@@ -36,6 +36,7 @@ const Wrapper = styled.div`
       margin-top: 0;
     }
     & > div:last-child {
+      margin-bottom: 1.2em; /* FIXME: fudged until it looked right */
     }
   }
 `;

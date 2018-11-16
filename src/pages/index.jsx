@@ -8,13 +8,17 @@ import Splash from '../components/Splash';
 import Banner from '../components/Banner';
 import SingleBlurb from '../components/SingleBlurb';
 import UpcomingShows from '../components/UpcomingShows';
+import ContactUs from '../components/ContactUs';
 import Welcome from '../components/Welcome';
 import Instagrid from '../components/Instagrid';
 import TwoColumn from '../components/TwoColumn';
 
 import Divider from '../elements/Divider';
+import DetectMobile from '../components/util/DetectMobile';
 
-/* TODO: mobile version */
+const MobileDivider = DetectMobile(({ isMobile }) => (
+  isMobile ? <Divider /> : null
+));
 
 const SpacedOut = styled.div`
   width: ${props => props.width || 'auto'};
@@ -31,7 +35,8 @@ const SpacedOut = styled.div`
 const LeftColumn = () => (
   <SpacedOut paddingTop="1em">
     <SingleBlurb />
-    {/* TODO: contact information */}
+    <Divider />
+    <ContactUs />
   </SpacedOut>
 );
 
@@ -40,7 +45,7 @@ const RightColumn = () => (
     <Welcome />
     <UpcomingShows />
     <Instagrid />
-    <Divider />
+    <MobileDivider />
   </SpacedOut>
 );
 

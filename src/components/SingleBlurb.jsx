@@ -30,8 +30,12 @@ const Title = styled(Header)`
 const SingleBlurb = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Bandcamp
-      track={1314741409}
-      name="End Of Your Gun"
+      type="album"
+      id={4254662711}
+      tracks={[1710010641]}
+      esig="d4e10ad440b106ebce64f72cc64684a7"
+      name="Am I To Blame?"
+      url="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
     <Lyrics>
       “There’s nothing as revealing

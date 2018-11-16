@@ -7,6 +7,8 @@ import DetectMobile from './util/DetectMobile';
 import Header from '../elements/Header';
 import Paragraph from '../elements/Paragraph';
 
+import Services from './Services';
+
 const Wrapper = styled.div`
 `;
 
@@ -23,6 +25,15 @@ const Welcome = ({ isMobile }) => (
       Sed eu diam volutpat, egestas nunc sit amet, tempor elit.
       Sed tincidunt ligula nisi, sit amet venenatis dolor pulvinar in.
     </Paragraph>
+    <Services
+      type="list"
+      withIcons
+      instagram="https://insta"
+      facebook="https://def"
+      spotify="https://spotify/mff-artist"
+      bandcamp="https://abc"
+      itunes="https://apple/mff-artist"
+    />
   </Wrapper>
 );
 
