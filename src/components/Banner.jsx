@@ -74,7 +74,7 @@ const AlbumBanner = ({ isMobile }) => (
       spotify="https://spotify"
       apple="https://apple"
       itunes="https://itunes"
-      bandcamp="https://myfavouritefilter.bandcamp.com/albums/always-changing"
+      bandcamp="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
   </Wrapper>
 );

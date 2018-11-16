@@ -44,9 +44,7 @@ const AlbumBlurb = ({ isMobile }) => (
     </Description>
     <Services
       type="list"
-      spotify="https://spotify"
-      apple="https://apple"
-      itunes="https://itunes"
+      bandcamp="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
   </Wrapper>
 );

@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   height: 100%;
   background: white;
   color: black;
+
+  a {
+    color: #008db4;
+  }
 `;
 
 const Root = ({ children }) => (

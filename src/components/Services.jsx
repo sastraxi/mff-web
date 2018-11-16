@@ -7,10 +7,11 @@ import ServiceIcon from '../elements/ServiceIcon';
 const SERVICE_ACTIONS = {
   spotify: 'Stream on Spotify',
   apple: 'Stream on Apple Music',
-  tidal: 'Get it on Tidal',
   itunes: 'Get it on iTunes',
-  youtube: 'View on YouTube',
+  youtube: 'Watch on YouTube',
   bandcamp: 'Stream on Bandcamp',
+  instagram: 'Follow us on Instagram',
+  facebook: 'Like us on Facebook',
 };
 
 const Icons = styled.div`
@@ -26,18 +27,17 @@ const Icons = styled.div`
 `;
 
 const List = styled.ul`
-  margin: 1em;
+  margin: ${props => (props.withIcons ? '1em 0' : '1em')};
   padding-left: 0;
 
-  & > li {
-
-    &.with-icons img {
+  & > li { 
+    display: ${props => (props.withIcons ? 'block' : 'list-item')};
+    img {
       width: 1em;
       height: 1em;
-      vertical-align: -0.12em;
-      padding-right: 0.3em;
+      vertical-align: -0.15em;
+      padding-right: 0.5em;
     }
-
   }
 `;
 
@@ -45,10 +45,10 @@ const Services = ({ type, withIcons, ...services }) => {
   switch (type) {
     case 'list':
       return (
-        <List>
+        <List withIcons={withIcons}>
           {
             Object.keys(services).map(name => (
-              <li key={name} className={withIcons && 'with-icons'}>
+              <li key={name}>
                 { withIcons && <ServiceIcon name={name} /> }
                 <a href={services[name]}>
                   { SERVICE_ACTIONS[name] }

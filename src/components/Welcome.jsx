@@ -28,10 +28,10 @@ const Welcome = ({ isMobile }) => (
     <Services
       type="list"
       withIcons
-      instagram="https://insta"
-      facebook="https://def"
+      instagram="https://instagram.com/my_favourite_filter"
+      facebook="https://facebook.com/myfavouritefilter"
       spotify="https://spotify/mff-artist"
-      bandcamp="https://abc"
+      bandcamp="https://myfavouritefilter.bandcamp.com"
       itunes="https://apple/mff-artist"
     />
   </Wrapper>

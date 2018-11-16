@@ -12,7 +12,7 @@ const ServiceIcon = ({ name }) => (
 );
 
 ServiceIcon.propTypes = {
-  name: PropTypes.oneOf(['apple', 'spotify', 'itunes']).isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default ServiceIcon;
