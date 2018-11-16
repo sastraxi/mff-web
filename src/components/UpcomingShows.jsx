@@ -19,7 +19,7 @@ const UpcomingShows = ({ isMobile }) => (
       Saturday, December 8th @ The Hideout
       <br />
       Doors 7pm; for more details see the&nbsp;
-      <a href="https://facebook.com">event page on facebook</a>
+      <a href="https://www.facebook.com/events/196747297874285/">event page on facebook</a>
       .
     </Paragraph>
   </Wrapper>

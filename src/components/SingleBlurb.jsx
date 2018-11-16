@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import DetectMobile from './util/DetectMobile';
-import AlbumCover from './image/AlbumCover';
+import Bandcamp from '../elements/Bandcamp';
 
 import Header from '../elements/Header';
 import Paragraph from '../elements/Paragraph';
@@ -29,7 +29,10 @@ const Title = styled(Header)`
 
 const SingleBlurb = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
-    <AlbumCover />
+    <Bandcamp
+      track={1314741409}
+      name="End Of Your Gun"
+    />
     <Lyrics>
       “There’s nothing as revealing
       <br />
@@ -37,7 +40,7 @@ const SingleBlurb = ({ isMobile }) => (
       <br />
       from the ones you love”
     </Lyrics>
-    <Title>End of your Gun</Title>
+    <Title>End Of Your Gun</Title>
     <Description>
       we’re super excited to show you
       the first single off of our debut ep!

@@ -64,7 +64,7 @@ const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Album>
       <YellowIcon>&#9654;</YellowIcon>
-      <em>End of your Gun</em>
+      <em>End Of Your Gun</em>
     </Album>
     <Announcement>
       listen to the lead single now

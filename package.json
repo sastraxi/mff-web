@@ -18,6 +18,7 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "react-resize-detector": "^3.2.0",
     "react-sizes": "^1.0.4",
     "styled-components": "^4.0.3"
   },
