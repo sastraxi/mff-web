@@ -34,9 +34,12 @@ const Submit = styled.button`
 `;
 
 const ContactForm = () => (
-  <form name="contact" method="POST" netlify="true">
+  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
     <Input type="text" name="name" placeholder="Your name" />
-    <Input type="email" name="email" placeholder="Your email" />
+    <p>
+      <Input type="email" name="email" placeholder="Your email" />
+    </p>
     <TextArea id="contact-message" name="message" placeholder="What's on your mind?" />
     <Submit type="submit">Send</Submit>
   </form>
