@@ -16,14 +16,23 @@ const Welcome = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Header>This is My Favourite Filter’s website.</Header>
     <Paragraph>
-      Fusce porta purus faucibus sapien bibendum, eget efficitur arcu consequat
-      Aenean rutrum commodo tristique.
-      Phasellus suscipit laoreet ex ac aliquet.
-      Ut lobortis vehicula mauris, sollicitudin luctus turpis varius quis.
-      Mauris volutpat mi vel arcu dignissim rutrum in sed purus.
-      Aenean iaculis ultricies velit sit amet cursus.
-      Sed eu diam volutpat, egestas nunc sit amet, tempor elit.
-      Sed tincidunt ligula nisi, sit amet venenatis dolor pulvinar in.
+      From the depths of the downtown Toronto music scene,
+      My Favourite Filter is an up and coming 5 piece rock
+      act. They operate on a simple code: Love each other,
+      love yourself.
+    </Paragraph>
+    <Paragraph>
+      With a hard focus on writing songs that cater to its
+      fun-loving listeners, My Favourite Filter boasts a full
+      sound featuring 3 part vocal harmonies, blistering lead
+      guitar licks, and a rhythm section that will make you
+      want to move your body.
+    </Paragraph>
+    <Paragraph>
+      Above all, this is a band of brothers who genuinely
+      enjoy the music they play and couldn’t be more excited
+      to share it with the world. Follow us on social media
+      for updates on recorded content and upcoming events.
     </Paragraph>
     <Services
       type="list"

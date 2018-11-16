@@ -33,13 +33,19 @@ const Submit = styled.button`
   cursor: pointer;
 `;
 
+// without this <p> inserted in the form, the email field disappears
+// when deployed to netlify. weird shit => weird <p>.
+const WeirdP = styled.p`
+  margin: 0;
+`;
+
 const ContactForm = () => (
   <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="contact" />
     <Input type="text" name="name" placeholder="Your name" />
-    <p>
+    <WeirdP>
       <Input type="email" name="email" placeholder="Your email" />
-    </p>
+    </WeirdP>
     <TextArea id="contact-message" name="message" placeholder="What's on your mind?" />
     <Submit type="submit">Send</Submit>
   </form>
