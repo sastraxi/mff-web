@@ -64,17 +64,27 @@ Widget.defaultProps = {
   esig: false,
 };
 
+// FIXME: take in an id or something
+/* eslint-disable-next-line */
+const PageMarker = () => (<a id="bandcamp" />);
+
 const Bandcamp = ({ width, ...props }) => {
   // 1. explicit width
-  if (width) return <Widget {...props} />;
+  if (width) {
+    return (
+      <>
+        <PageMarker />
+        <Widget {...props} />
+      </>
+    );
+  }
 
   // 2. auto-sizing embed widget
   return (
     <>
-      <a id="bandcamp" /> {/* eslint-disable-line */}
+      <PageMarker />
       <ReactResizeDetector handleWidth>
         {(sizeProps) => {
-          console.log(sizeProps);
           if (!sizeProps) return <div />;
           return <Widget {...props} width={sizeProps} />;
         }}
