@@ -39,9 +39,7 @@ const Welcome = ({ isMobile }) => (
       withIcons
       instagram="https://instagram.com/my_favourite_filter"
       facebook="https://facebook.com/myfavouritefilter"
-      spotify="https://spotify/mff-artist"
       bandcamp="https://myfavouritefilter.bandcamp.com"
-      itunes="https://apple/mff-artist"
     />
   </Wrapper>
 );

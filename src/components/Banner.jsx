@@ -63,7 +63,9 @@ const Announcement = styled.div`
 const AlbumBanner = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Album>
-      <YellowIcon>&#9654;</YellowIcon>
+      <a href="#bandcamp">
+        <YellowIcon>&#9654;</YellowIcon>
+      </a>
       <em>Am I To Blame?</em>
     </Album>
     <Announcement>
@@ -72,9 +74,6 @@ const AlbumBanner = ({ isMobile }) => (
     </Announcement>
     <Services
       type="icons"
-      spotify="https://spotify"
-      apple="https://apple"
-      itunes="https://itunes"
       bandcamp="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
   </Wrapper>

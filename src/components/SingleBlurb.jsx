@@ -50,10 +50,6 @@ const SingleBlurb = ({ isMobile }) => (
     </Description>
     <Services
       type="list"
-      spotify="https://open.spotify.com/listen/bx9vn2"
-      youtube="https://youtube.com/watch?v="
-      apple="https://apple.com/music"
-      itunes="https://itunes"
       bandcamp="https://myfavouritefilter.bandcamp.com/album/always-changing"
     />
   </Wrapper>
