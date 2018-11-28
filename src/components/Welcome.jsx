@@ -29,9 +29,9 @@ const Welcome = ({ isMobile }) => (
       want to move your body.
     </Paragraph>
     <Paragraph>
-      Above all, this is a band of brothers who genuinely
-      enjoy the music they play and couldn’t be more excited
-      to share it with the world. Follow us on social media
+      Above all, this is a band of brothers who love the
+      music they play and couldn’t be more excited to
+      share it with the world. Follow us on social media
       for updates on recorded content and upcoming events.
     </Paragraph>
     <Services

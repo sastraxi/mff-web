@@ -23,7 +23,7 @@ const ContactUs = ({ isMobile }) => (
   <Wrapper isMobile={isMobile}>
     <Title>Contact us</Title>
     <Description>
-      get in touch with the boys. request a press kit,
+      Get in touch with the boys. Request a press kit,
       ask when we’ll be in your area, or shoot the
       shit about hockey
     </Description>
