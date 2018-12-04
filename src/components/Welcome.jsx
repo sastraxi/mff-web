@@ -40,6 +40,7 @@ const Welcome = ({ isMobile }) => (
       instagram="https://instagram.com/my_favourite_filter"
       facebook="https://facebook.com/myfavouritefilter"
       bandcamp="https://myfavouritefilter.bandcamp.com"
+      youtube="https://www.youtube.com/channel/UCRdQubswiuc7bpJM0CmSqYw"
     />
   </Wrapper>
 );
