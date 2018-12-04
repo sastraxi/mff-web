@@ -41,6 +41,7 @@ const Welcome = ({ isMobile }) => (
       facebook="https://facebook.com/myfavouritefilter"
       bandcamp="https://myfavouritefilter.bandcamp.com"
       youtube="https://www.youtube.com/channel/UCRdQubswiuc7bpJM0CmSqYw"
+      spotify="https://open.spotify.com/artist/2IZkLGrIIYeSaI3nfgOdJs"
     />
   </Wrapper>
 );
