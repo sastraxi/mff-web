@@ -45,7 +45,7 @@ const SingleBlurb = ({ isMobile }) => (
     <Title>Am I To Blame?</Title>
     <Description>
       We’re super excited to show you
-      the first single off of our debut ep!
+      the first cut off of our debut ep!
       Share your thoughts below &mdash; mff
     </Description>
     <Services
